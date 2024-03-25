@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="./css/style.css" >
+  </head>
+  <body>
+    <div class="container">
+      <p id="student-info"></p>
+      <h1>Pizza Order Form</h1>
+
+      <form id="pizza-form">
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+
+        <label for="crust">Crust:</label>
+        <select id="crust" name="crust">
+          <option value="thin">Thin Crust</option>
+          <option value="thick">Thick Crust</option>
+          <option value="stuffed">Stuffed Crust</option>
+        </select>
+
+        <label id="toppings-label">Toppings:</label>
+        <br >
+        <div class="topping-option">
+          <input
+            type="checkbox"
+            id="pepperoni"
+            name="topping"
+            value="pepperoni"
+          >
+          <label for="pepperoni">Pepperoni</label>
+        </div>
+        <br >
+        <div class="topping-option">
+          <input
+            type="checkbox"
+            id="mushrooms"
+            name="topping"
+            value="mushrooms"
+          >
+          <label for="mushrooms">Mushrooms</label>
+        </div>
+        <br >
+        <div class="topping-option">
+          <input type="checkbox" id="olives" name="topping" value="olives" >
+          <label for="olives">Olives</label>
+        </div>
+        <br >
+        <label for="sauce">Sauce:</label>
+        <select id="sauce" name="sauce">
+          <option value="tomato">Tomato</option>
+          <option value="pesto">Pesto</option>
+          <option value="bbq">BBQ</option>
+        </select>
+
+        <label for="cheese">Cheese:</label>
+        <select id="cheese" name="cheese">
+          <option value="mozzarella">Mozzarella</option>
+          <option value="cheddar">Cheddar</option>
+          <option value="parmesan">Parmesan</option>
+        </select>
+
+        <br >
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" >
+        <br >
+        <label for="delivery">Delivery:</label>
+        <div class="box">
+          <input type="checkbox" id="delivery" name="delivery" >
+          <label for="delivery">Delivery</label>
+        </div>
+        <br >
+        <label for="delivery-address">Delivery Address:</label>
+        <textarea
+          id="delivery-address"
+          name="delivery-address"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <br >
+        <label for="instructions">Special Instructions:</label>
+        <textarea
+          id="instructions"
+          name="instructions"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <br >
+        <button type="button" id="order-button">Order</button>
+      </form>
+
+      <div id="pizza-description"></div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
